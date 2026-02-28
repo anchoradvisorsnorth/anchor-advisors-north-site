@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anchor Advisors North | Estate & Trust Planning Guidance</title>
+  <meta name="description" content="Anchor Advisors North provides practical estate and trust planning guidance to help families organize decisions with clarity and confidence." />
+  <style>
+    :root {
+      --navy: #102a43;
+      --blue: #1f5f8b;
+      --accent: #2a9d8f;
+      --text: #1f2937;
+      --muted: #64748b;
+      --bg: #f7fafc;
+      --white: #fff;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef4fb 0%, #ffffff 55%);
+      line-height: 1.5;
+    }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+
+    header { padding: 18px 0; }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--blue), var(--accent));
+    }
+    .top-cta {
+      background: var(--navy);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 40px 0 56px;
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      margin: 0 0 18px;
+      color: #3b4a5e;
+      max-width: 56ch;
+      font-size: 1.05rem;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .btn {
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 11px 14px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: inline-block;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue), #2f7aa7);
+      color: #fff;
+    }
+    .btn-ghost {
+      border: 1px solid #cfd9e6;
+      color: var(--navy);
+      background: #fff;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid #e6edf7;
+      box-shadow: 0 15px 32px rgba(16, 42, 67, 0.12);
+      padding: 24px;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 1.25rem;
+    }
+    .card p { margin: 0 0 12px; color: var(--muted); }
+
+    section {
+      padding: 18px 0 44px;
+    }
+    .section-title {
+      margin: 0 0 16px;
+      font-size: 1.55rem;
+      color: var(--navy);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .tile {
+      background: var(--bg);
+      border: 1px solid #e6edf7;
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .tile h3 {
+      margin: 0 0 8px;
+      color: #153b5c;
+      font-size: 1.04rem;
+    }
+    .tile p {
+      margin: 0;
+      color: #4b5563;
+      font-size: 0.94rem;
+    }
+
+    .cta-band {
+      margin: 10px 0 28px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #12324f, #1f5f8b);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .cta-band p { margin: 0; max-width: 65ch; }
+
+    footer {
+      border-top: 1px solid #e5ebf4;
+      padding: 26px 0 36px;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 930px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="Anchor Advisors North home">
+        <span class="brand-mark">AN</span>
+        <span>Anchor Advisors North</span>
+      </a>
+      <a class="top-cta" href="#contact">Schedule a Consultation</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Practical Trust & Estate Planning Guidance for Families</h1>
+        <p class="sub">
+          We help you organize the right information, understand your options, and move forward with confidence.
+          No pressure. Just clear next steps.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://michianatrustplanning.com">Get the Free Workbook</a>
+          <a class="btn btn-ghost" href="#contact">Talk With Our Team</a>
+        </div>
+      </div>
+
+      <aside class="card" id="contact">
+        <h2>Start with a Simple Conversation</h2>
+        <p>Tell us a little about your planning goals and we’ll follow up with next steps.</p>
+        <p><strong>Email:</strong> hello@anchoradvisorsnorth.com</p>
+        <p><strong>Phone:</strong> (000) 000-0000</p>
+        <p><strong>Serving:</strong> Michiana & surrounding communities</p>
+      </aside>
+    </section>
+
+    <section>
+      <h2 class="section-title">How We Help</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3>Trust Planning Prep</h3>
+          <p>Organize your key decisions before legal drafting so meetings are efficient and productive.</p>
+        </article>
+        <article class="tile">
+          <h3>Family Decision Clarity</h3>
+          <p>Work through trustee roles, beneficiary considerations, and practical handoff planning.</p>
+        </article>
+        <article class="tile">
+          <h3>Guided Next Steps</h3>
+          <p>Leave each conversation with a clear action plan and fewer unknowns.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="cta-band">
+      <p><strong>Not sure where to start?</strong> Download the free Revocable Trust Workbook and begin with a structured checklist.</p>
+      <a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.35);background:transparent;" href="https://michianatrustplanning.com">Download Workbook</a>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Anchor Advisors North. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
