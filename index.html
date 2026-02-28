@@ -44,18 +44,21 @@
       border-bottom: 1px solid var(--line);
     }
     .nav {
-      min-height: 62px;
+      min-height: 50px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
+      gap: 12px;
       flex-wrap: wrap;
+      padding: 6px 0;
     }
     .logo {
-      display: inline-block;
-      width: min(330px, 62vw);
+      display: inline-flex;
+      align-items: center;
+      width: auto;
+      line-height: 0;
     }
-    .logo img { width: 100%; height: auto; display: block; }
+    .logo img { height: 56px; width: auto; display: block; }
 
     nav ul {
       list-style: none;
@@ -80,10 +83,10 @@
     }
 
     .hero {
-      padding: 64px 0 48px;
+      padding: 28px 0 36px;
       display: grid;
       grid-template-columns: 1.25fr .95fr;
-      gap: 28px;
+      gap: 24px;
       align-items: center;
     }
     h1 {
