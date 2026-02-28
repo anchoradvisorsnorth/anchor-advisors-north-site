@@ -3,225 +3,348 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anchor Advisors North | Estate Planning & Medicare Guidance</title>
-  <meta name="description" content="Anchor Advisors North provides estate planning and Medicare guidance to help individuals and families make confident, practical decisions." />
+  <title>Anchor Advisors North | Estate Planning Guidance for Michiana Families</title>
+  <meta name="description" content="Anchor Advisors North is a regional estate planning and trust implementation advisory serving Northern Indiana and Southwest Michigan." />
   <style>
     :root {
-      --navy: #0f2940;
-      --blue: #1f5f8b;
-      --teal: #2a9d8f;
-      --text: #1f2937;
+      --navy: #12304a;
+      --blue: #2b5f86;
+      --slate: #4b5f70;
+      --text: #1e293b;
       --muted: #64748b;
-      --line: #e2e8f0;
-      --bg: #f8fbff;
-      --white: #fff;
+      --bg: #f6f9fc;
+      --line: #dce6f1;
+      --white: #ffffff;
       --radius: 14px;
     }
+
     * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
-      background: linear-gradient(180deg, #eef4fb 0%, #ffffff 55%);
-      line-height: 1.5;
+      line-height: 1.55;
+      background: linear-gradient(180deg, #edf4fb 0%, #ffffff 50%);
     }
+
     .container { width: min(1120px, 92%); margin: 0 auto; }
 
     header {
-      padding: 18px 0;
-      border-bottom: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.75);
-      backdrop-filter: blur(6px);
       position: sticky;
       top: 0;
-      z-index: 5;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--line);
     }
+
     .nav {
+      min-height: 72px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 14px;
+      justify-content: space-between;
+      gap: 16px;
     }
+
     .brand {
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      text-decoration: none;
       color: var(--navy);
+      text-decoration: none;
       font-weight: 700;
-      letter-spacing: .1px;
     }
+
     .mark {
       width: 36px;
       height: 36px;
       border-radius: 10px;
-      background: linear-gradient(135deg, var(--blue), var(--teal));
+      background: linear-gradient(135deg, var(--blue), #4b7a9e);
       color: #fff;
       display: grid;
       place-items: center;
+      font-size: .84rem;
       font-weight: 800;
-      font-size: .88rem;
     }
-    .cta-top {
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
       text-decoration: none;
-      background: var(--navy);
-      color: #fff;
-      border-radius: 10px;
-      padding: 10px 14px;
+      color: #2f4255;
       font-weight: 600;
-      font-size: .94rem;
+      font-size: .92rem;
     }
 
     .hero {
-      padding: 52px 0 44px;
+      padding: 58px 0 44px;
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 28px;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 26px;
       align-items: center;
     }
+
     h1 {
-      margin: 0 0 10px;
-      font-size: clamp(2rem, 4.1vw, 3.1rem);
-      line-height: 1.13;
+      margin: 0 0 12px;
       color: var(--navy);
+      font-size: clamp(2rem, 4.4vw, 3.1rem);
+      line-height: 1.14;
       letter-spacing: -0.02em;
     }
+
     .sub {
-      margin: 0 0 18px;
-      max-width: 58ch;
+      margin: 0 0 20px;
+      max-width: 64ch;
       color: #334155;
-      font-size: 1.05rem;
+      font-size: 1.06rem;
     }
-    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
     .btn {
-      text-decoration: none;
-      padding: 11px 15px;
+      border: none;
       border-radius: 10px;
+      padding: 11px 16px;
+      text-decoration: none;
+      display: inline-block;
       font-weight: 700;
       font-size: .95rem;
-      display: inline-block;
     }
-    .btn-primary { background: linear-gradient(135deg, var(--blue), #2e7ca9); color: #fff; }
-    .btn-outline { border: 1px solid #cfd9e6; color: var(--navy); background: #fff; }
 
-    .panel {
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue), #3574a1);
+      color: #fff;
+    }
+
+    .text-link {
+      color: #2f5e86;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .95rem;
+    }
+
+    .hero-panel {
       background: var(--white);
+      border: 1px solid #e1ebf6;
       border-radius: var(--radius);
-      border: 1px solid #e5edf7;
-      box-shadow: 0 15px 32px rgba(16, 42, 67, .11);
       padding: 24px;
+      box-shadow: 0 14px 30px rgba(18, 48, 74, 0.1);
     }
-    .panel h2 { margin: 0 0 10px; color: var(--navy); font-size: 1.2rem; }
-    .panel p { margin: 0 0 10px; color: var(--muted); }
 
-    section { padding: 10px 0 40px; }
-    .section-title { margin: 0 0 16px; font-size: 1.52rem; color: var(--navy); }
+    .hero-panel h2 { margin: 0 0 8px; font-size: 1.16rem; color: var(--navy); }
+    .hero-panel p { margin: 0 0 8px; color: var(--muted); }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
+    section { padding: 14px 0 42px; }
+
+    .section-title {
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-size: 1.6rem;
     }
-    .tile {
+
+    .card {
       background: var(--bg);
-      border: 1px solid #e6edf7;
+      border: 1px solid #e1ebf6;
       border-radius: 12px;
-      padding: 18px;
+      padding: 20px;
     }
-    .tile h3 { margin: 0 0 8px; color: #173b5b; font-size: 1.03rem; }
-    .tile p { margin: 0; color: #4b5563; font-size: .94rem; }
 
-    .split {
+    .list {
+      margin: 0;
+      padding-left: 20px;
+      color: #374151;
+    }
+
+    .list li { margin: 8px 0; }
+
+    .muted { color: var(--muted); }
+
+    .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
     }
 
-    footer {
-      border-top: 1px solid var(--line);
-      text-align: center;
-      padding: 24px 0 36px;
-      color: #64748b;
-      font-size: .88rem;
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
     }
 
-    @media (max-width: 940px) {
-      .hero, .grid, .split { grid-template-columns: 1fr; }
-      .hero { padding-top: 34px; }
+    .step {
+      background: var(--white);
+      border: 1px solid #e1ebf6;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .step strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      color: var(--navy);
+    }
+
+    .quote-line {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-left: 4px solid #6d8eab;
+      background: #f2f7fc;
+      color: #2f4255;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    .cta-band {
+      background: linear-gradient(135deg, #12304a, #2a5e84);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cta-band p { margin: 0; max-width: 68ch; }
+
+    footer {
+      margin-top: 14px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: #64748b;
+      font-size: .88rem;
+      padding: 26px 0 36px;
+    }
+
+    @media (max-width: 980px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .grid-4 { grid-template-columns: 1fr; }
+      nav ul { gap: 12px; }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="#" aria-label="Anchor Advisors North home">
-        <span class="mark">AN</span>
+      <a class="brand" href="#home" aria-label="Anchor Advisors North home">
+        <span class="mark">AAN</span>
         <span>Anchor Advisors North</span>
       </a>
-      <a class="cta-top" href="#contact">Schedule a Consultation</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#who">Who We Serve</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main class="container" id="home">
     <section class="hero">
       <div>
-        <h1>Estate Planning & Medicare Guidance Built Around Real Decisions</h1>
+        <h1>Estate Planning Guidance for Michiana Families</h1>
         <p class="sub">
-          Anchor Advisors North helps individuals and families make informed decisions across estate planning and Medicare.
-          We focus on clarity, preparation, and practical next steps.
+          We help homeowners and families in Northern Indiana and Southwest Michigan put a complete,
+          functioning estate plan in place — without confusion or unnecessary complexity.
         </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#services">Explore Services</a>
-          <a class="btn btn-outline" href="#contact">Talk With Our Team</a>
+        <div class="actions" id="schedule">
+          <a class="btn btn-primary" href="#contact">Schedule an Introductory Conversation</a>
+          <a class="text-link" href="#process">Learn How the Process Works</a>
         </div>
       </div>
-
-      <aside class="panel" id="contact">
-        <h2>Get Started</h2>
+      <aside class="hero-panel" id="contact">
+        <h2>Regional Estate & Trust Advisory</h2>
+        <p>Trust-based estate planning. Implementation focused. Locally grounded.</p>
         <p><strong>Email:</strong> hello@anchoradvisorsnorth.com</p>
         <p><strong>Phone:</strong> (000) 000-0000</p>
-        <p><strong>Service Area:</strong> Michiana & surrounding communities</p>
-        <p style="margin-top:12px;">Prefer to start with a self-guided resource? Our workbook is available on request.</p>
       </aside>
     </section>
 
-    <section id="services">
-      <h2 class="section-title">Core Service Areas</h2>
-      <div class="grid">
-        <article class="tile">
-          <h3>Estate Planning Preparation</h3>
-          <p>Organize assets, beneficiary intentions, trustee considerations, and key family decisions before legal drafting.</p>
+    <section id="who">
+      <h2 class="section-title">Who We Serve</h2>
+      <div class="card">
+        <ul class="list">
+          <li>Homeowning couples in their 60s and early 70s</li>
+          <li>Widowed individuals with adult children</li>
+          <li>Families with $500k – $3M in assets</li>
+          <li>Households who want clarity and completion</li>
+        </ul>
+        <p class="muted" style="margin:14px 0 0;">
+          We are not a fit for complex tax engineering, Medicaid crisis planning, or high-conflict family situations.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">What Makes This Different</h2>
+      <div class="grid-2">
+        <article class="card">
+          <p style="margin-top:0;"><strong>Most estate plans fail in execution, not drafting.</strong></p>
+          <p class="muted" style="margin-bottom:0;">
+            Our focus is not just preparing documents. Our focus is making sure your trust actually works.
+          </p>
         </article>
-        <article class="tile">
-          <h3>Medicare Planning Support</h3>
-          <p>Understand enrollment windows, coverage options, and cost/fit trade-offs so you can choose with confidence.</p>
+        <article class="card">
+          <ul class="list" style="margin:0;">
+            <li>Clear trust-based structure</li>
+            <li>Coordinated wills and powers of attorney</li>
+            <li>Guidance on titling and beneficiary designations</li>
+            <li>Implementation roadmap</li>
+            <li>Completion review</li>
+          </ul>
         </article>
-        <article class="tile">
-          <h3>Integrated Planning Conversations</h3>
-          <p>Coordinate estate and healthcare planning priorities so decisions work together, not in isolation.</p>
-        </article>
+      </div>
+    </section>
+
+    <section id="process">
+      <h2 class="section-title">The Process</h2>
+      <div class="grid-4">
+        <article class="step"><strong>1) Orientation</strong><div class="muted">Understand your goals, family context, and what needs to be addressed first.</div></article>
+        <article class="step"><strong>2) Design</strong><div class="muted">Shape a trust-based plan structure that matches your situation and priorities.</div></article>
+        <article class="step"><strong>3) Document Preparation</strong><div class="muted">Coordinate document drafting with the right legal and planning inputs.</div></article>
+        <article class="step"><strong>4) Implementation & Completion</strong><div class="muted">Complete titling, beneficiary updates, and final review so the plan functions as intended.</div></article>
+      </div>
+      <div class="quote-line">A trust is not magic. It only works if the assets are inside it.</div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Geographic Focus</h2>
+      <div class="card">
+        <p style="margin:0; color:#334155;">
+          We serve Northern Indiana and Southwest Michigan.<br />
+          Locally based. Locally focused.
+        </p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">How We Work</h2>
-      <div class="split">
-        <article class="tile">
-          <h3>1) Discovery</h3>
-          <p>We start with your current situation, goals, and immediate concerns.</p>
-        </article>
-        <article class="tile">
-          <h3>2) Decision Framework</h3>
-          <p>We translate complexity into clear options, priorities, and action steps.</p>
-        </article>
-        <article class="tile">
-          <h3>3) Coordination</h3>
-          <p>We help you prepare for conversations with attorneys, advisors, and family stakeholders.</p>
-        </article>
-        <article class="tile">
-          <h3>4) Ongoing Support</h3>
-          <p>As life changes, we help keep your planning aligned and current.</p>
-        </article>
+      <div class="cta-band">
+        <p>
+          Schedule a brief introductory conversation to determine whether a trust-based plan
+          makes sense for your situation.
+        </p>
+        <a class="btn btn-primary" href="#contact" style="background:#fff;color:#12304a;">Schedule a Conversation</a>
       </div>
     </section>
   </main>
