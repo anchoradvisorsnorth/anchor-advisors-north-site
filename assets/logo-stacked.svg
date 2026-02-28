@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="220" viewBox="0 0 520 220" role="img" aria-label="Anchor Advisors North stacked logo">
-  <rect width="520" height="220" fill="none"/>
-  <g fill="#1C2E3A" font-family="'Libre Baskerville', 'Times New Roman', serif" letter-spacing="1.6" text-anchor="middle">
-    <text x="260" y="88" font-size="58">ANCHOR</text>
-    <text x="260" y="152" font-size="50">ADVISORS NORTH</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="220" viewBox="0 0 560 220" role="img" aria-label="Anchor Advisors North stacked">
+  <g fill="#1C2E3A" font-family="'Libre Baskerville','Cormorant Garamond','Source Serif 4','Times New Roman',serif" letter-spacing="1.8" text-anchor="middle">
+    <text x="280" y="92" font-size="62">ANCHOR ADVISORS</text>
+    <text x="280" y="164" font-size="58">NORTH</text>
   </g>
 </svg>
